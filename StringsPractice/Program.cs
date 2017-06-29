@@ -64,21 +64,41 @@ namespace StringsPractice
             //{
             //    Console.WriteLine("Last name must be longer.");
             //}
-            Console.WriteLine("Please enter your first name.");
-            string firstName = Console.ReadLine();
-            Console.WriteLine("Enter a different first name.");
-            string secondName = Console.ReadLine();
+            //Console.WriteLine("Please enter your first name.");
+            //string firstName = Console.ReadLine();
+            //Console.WriteLine("Enter a different first name.");
+            //string secondName = Console.ReadLine();
 
-            
-            if (firstName == secondName) // or you can use (firstName.Equals(secondName))
+
+            //if (firstName == secondName) // or you can use (firstName.Equals(secondName))
+            //{
+            //    Console.WriteLine("The names are the same.");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("The names are different.");
+            //}
+            Console.WriteLine("Please enter 1 number.");
+            int holeNumber = int.Parse(Console.ReadLine());
+                        
+            if (holeNumber < 0 || holeNumber > 9)
             {
-                Console.WriteLine("The names are the same.");
+                Console.WriteLine("Please enter a number between 1 and 9.");
             }
+            else if(holeNumber == 0 || holeNumber == 1 || holeNumber == 6 || holeNumber == 9)
+            {
+                Console.WriteLine("1 hole");
+            }
+            else if (holeNumber == 8)
+            {
+                Console.WriteLine("2 holes");
+            }
+
             else
             {
-                Console.WriteLine("The names are different.");
+                Console.WriteLine("No holes");
             }
-
         }
     }
 }
+
